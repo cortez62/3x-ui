@@ -1556,7 +1556,7 @@ func (t *Tgbot) answerCallback(callbackQuery *telego.CallbackQuery, isAdmin bool
 				//}
 				//t.SendMsgToTgbot(chatId, t.I18nBot("tgbot.answers.chooseInbound"), inbounds)
 
-				     t.sendCallbackAnswerTgBot(callbackQuery.ID, "Esta opción está deshabilitada.")
+				     //t.sendCallbackAnswerTgBot(callbackQuery.ID, "Esta opción está deshabilitada.")
 	                return
 			}
 
