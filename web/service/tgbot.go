@@ -747,14 +747,14 @@ func (t *Tgbot) answerCallback(callbackQuery *telego.CallbackQuery, isAdmin bool
 				inbound, _ := t.inboundService.GetInbound(inboundIdInt)
 				t.SendMsgToTgbot(chatId, t.I18nBot("tgbot.answers.chooseClient", "Inbound=="+inbound.Remark), clientsKB)
 			case "client_sub_links":
-				t.sendClientSubLinks(chatId, email)
-				return
+			//t.sendClientSubLinks(chatId, email)
+				//return
 			case "client_individual_links":
-				t.sendClientIndividualLinks(chatId, email)
-				return
+				//t.sendClientIndividualLinks(chatId, email)
+				//return
 			case "client_qr_links":
-				t.sendClientQRLinks(chatId, email)
-				return
+				//t.sendClientQRLinks(chatId, email)
+				//return
 			case "client_get_usage":
 				t.sendCallbackAnswerTgBot(callbackQuery.ID, t.I18nBot("tgbot.messages.email", "Email=="+email))
 				t.searchClient(chatId, email)
