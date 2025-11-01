@@ -752,7 +752,7 @@ func (t *Tgbot) answerCallback(callbackQuery *telego.CallbackQuery, isAdmin bool
 			case "client_individual_links":
 				//t.sendClientIndividualLinks(chatId, email)
 				//return
-			case "client_qr_links":
+			//case "client_qr_links":
 				//t.sendClientQRLinks(chatId, email)
 				//return
 			case "client_get_usage":
