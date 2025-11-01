@@ -1549,12 +1549,15 @@ func (t *Tgbot) answerCallback(callbackQuery *telego.CallbackQuery, isAdmin bool
 				}
 				t.SendMsgToTgbot(chatId, t.I18nBot("tgbot.answers.chooseInbound"), inbounds)
 			case "admin_client_qr_links":
-				inbounds, err := t.getInboundsFor("get_clients_for_qr")
-				if err != nil {
-					t.sendCallbackAnswerTgBot(callbackQuery.ID, err.Error())
-					return
-				}
-				t.SendMsgToTgbot(chatId, t.I18nBot("tgbot.answers.chooseInbound"), inbounds)
+				//inbounds, err := t.getInboundsFor("get_clients_for_qr")
+				//if err != nil {
+					//t.sendCallbackAnswerTgBot(callbackQuery.ID, err.Error())
+					//return
+				//}
+				//t.SendMsgToTgbot(chatId, t.I18nBot("tgbot.answers.chooseInbound"), inbounds)
+
+				     t.sendCallbackAnswerTgBot(callbackQuery.ID, "Esta opción está deshabilitada.")
+	                return
 			}
 
 		}
